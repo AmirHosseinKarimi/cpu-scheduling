@@ -1,0 +1,250 @@
+﻿@font-face {
+  font-family: 'Byekan';
+  src: url('fonts/byekan.eot?#') format('eot'),  /* IE6-8 */
+       url('fonts/Byekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('fonts/Byekan.ttf') format('truetype');  /* Saf3-5, Chrome4+, FF3.5, Opera 10+ */  
+}
+
+
+body{
+	font-family: 'Byekan';
+	margin: 0px;
+	direction:rtl;
+}
+
+label[for*="ts"],button[id*="ts"],div#ts{
+	display:none;
+}
+
+
+.num{
+	position: fixed;
+	display:block;
+	height:50px;
+	top:0px;
+	left:0px;
+	right:0px;
+	text-align:center;
+}
+
+.num label{
+	color: #FFF;
+}
+
+.num div{
+background-color: white;
+padding: 12px 0px;
+display: inline-block;
+margin: 0px -4px;
+width: 40px;
+position: relative;
+top: -1px;
+}
+
+.num button{
+	font-size: 18px;
+	height: 100%;
+	direction: ltr !important;
+}
+
+.fields{
+	margin-top:50px;
+}
+
+.fields .fields_div{
+	display:block;
+	padding: 10px 20px;
+}
+
+.fields .fields_div:hover{
+background-color: #C9C9C9 !important;
+background-image: url('logo.png');
+background-repeat: no-repeat;
+background-size: 40px 40px;
+background-position: 10px center;
+}
+
+.fields .fields_div:nth-child(odd){
+	background-color:#F0F0F0;
+}
+
+.fields .fields_div input{
+line-height: 20px;
+width:10%;
+border-radius: 5px;
+transition: all 0.3s ease-in-out 0s;
+}
+
+.fields .fields_div input[name*="PP_"]{
+	display:none;
+}
+
+.fields .fields_div label[for*="PP_"]{
+	display:none;
+}
+
+.fields .fields_div input{
+border: 1px solid rgba(29, 120, 131, 1);
+}
+
+.submit{
+	display:block;
+	padding:10px 0px;
+	margin:10px;
+}
+
+
+.submit input{
+display: block;
+width: 80%;
+font-size: 30px;
+line-height: 40px;
+margin-bottom: 20px;
+}
+
+
+
+
+.header,.footer{
+text-align: center;
+color: #FFF;
+position: fixed;
+z-index:99999;
+left: 0px;
+right: 0px;
+padding: 10px;
+font-weight: bold;
+font-size: 19px;
+transition: all 0.5s ease-in-out 0s;
+}
+
+
+.header{
+top: -50px;
+}
+
+.footer{
+bottom: -50px;
+}
+
+
+.logo{
+position: fixed;
+width: 80px;
+height: 200px;
+right: 30px;
+bottom: -130px;
+background-size: 80px 130px;
+border-radius: 20px;
+transition: bottom 0.5s ease-in-out 0.3s;
+animation: 10s linear 2s alternate none infinite shake;
+}
+
+.logo:hover .footer{
+	bottom:0px;
+}
+
+.logo:hover .header{
+	top:0px;
+}
+
+.logo:hover{
+	bottom:-80px;
+	animation: none;
+}
+
+.logo img{
+animation: 10s linear 0s alternate none infinite rotate;
+width: 60px;
+height: 60px;
+margin-top: 5px;
+}
+
+.main_logo:hover img{
+opacity:0.5 !important;
+}
+
+.main_logo:hover img:hover{
+opacity:1 !important;
+}
+
+.main_logo img{
+animation: none;
+width: 200px;
+height: 200px;
+margin-top: 80px;
+opacity:0.5;
+transition: opacity 0.5s linear 0s;
+cursor:pointer;
+}
+
+.main_logo img.active{
+animation: 10s linear 0s alternate none infinite rotate;
+opacity:1 !important;
+}
+
+
+.help_txt{
+	text-align:center;
+}
+
+.help_txt p{
+border: 2px dotted #FFF;
+display: none;
+padding: 10px;
+margin-top: 25px;
+color: #FFF;
+}
+
+.help_txt p.active{
+display: inline-block;
+}
+
+.btn{
+	color:#FFF;
+	font-size:14px;
+	line-height:20px;
+	padding:5px 12px;
+	border-width:1px;
+	border-radius:4px;
+	border-style:solid;
+	cursor:pointer;
+	display:inline-block;
+	text-shadow:0px -1px 0px rgba(0, 0, 0, 0.25);
+	border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	box-shadow:0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	
+	font-family: "Byekan";
+	font-weight:bold;
+}
+
+.btn:hover{
+	background-position:0px -15px;
+	box-shadow:0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active{
+	transition:all 0s ease 0s;
+	background-position:0px 0px;
+}
+
+
+@keyframes rotate {
+	from{ transform: rotateY(0deg); }
+	to{ transform: rotateY(360deg); }
+}
+
+@keyframes fade {
+	10% { opacity:1; }
+	20% { opacity:0.5; }
+}
+
+@keyframes shake {
+	0% { bottom:-130px; }
+	2% { bottom:-115px; }
+	4% { bottom:-130px; }
+	6% { bottom:-115px; }
+	8% { bottom:-130px; }
+	10% { bottom:-115px; }
+	12% { bottom:-130px; }
+}

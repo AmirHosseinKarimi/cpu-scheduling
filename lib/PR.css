@@ -1,0 +1,57 @@
+﻿.fields .fields_div input[name*="PP_"]{
+	display:unset !important;
+}
+
+.fields .fields_div label[for*="PP_"]{
+	display:unset !important;
+}
+
+
+.num{
+	background-image: linear-gradient(to bottom, #E47E28, #994E0F);
+}
+
+.fields .fields_div input:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #1D7883;
+}
+
+.header,.footer{
+background-image: linear-gradient(to bottom, #E47E28, #994E0F);
+}
+
+.logo{
+background-image: linear-gradient(to bottom, #E47E28, #994E0F);
+}
+
+.help_txt p.active{
+background-image: linear-gradient(to bottom, #E47E28, #994E0F);
+}
+
+
+.normal-btn{
+	background-color:#006DCC;
+	background-image:linear-gradient(to bottom, #0088CC, #0044CC);
+	background-repeat:repeat-x;
+	transition: opacity 0.5s ease-out 0s;
+}
+
+.normal-btn:hover{
+	background-color:#0044CC;
+	transition:background-position 0.3s linear 0s;
+}
+
+.normal-btn:active{
+	background-image:linear-gradient(to bottom, #46BEE6, #0076CC);
+	background-color:#009ACC;
+	transition:all 0s ease 0s;
+}
+
+
+.warning-btn{
+	background-color:#994E0F;
+	background-image: linear-gradient(to bottom, #E47E28, #994E0F);
+	background-repeat:repeat-x;
+}
+.warning-btn:hover{
+	transition:background-position 0.3s linear 0s;
+}

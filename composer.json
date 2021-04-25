@@ -1,0 +1,16 @@
+{
+    "name": "amirhosseinkarimi/cpu-scheduling",
+    "description": "Simple CPU scheduling calculator & visualizer with PHP",
+    "type": "project",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Amir hossein Karimi",
+            "email": "amir.hossein7464@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

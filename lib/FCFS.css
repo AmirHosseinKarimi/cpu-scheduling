@@ -1,0 +1,42 @@
+﻿.num{
+	background-image: linear-gradient(to bottom, #5674DB, #3752AE);
+}
+
+.fields .fields_div input:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #1D7883;
+}
+
+.header,.footer{
+	background-image: linear-gradient(to bottom, #5674DB, #3752AE);
+}
+
+.logo{
+	background-image: linear-gradient(to bottom, #5674DB, #3752AE);
+}
+
+.help_txt p.active{
+	background-image: linear-gradient(to bottom, #5674DB, #3752AE);
+}
+
+
+.normal-btn{
+	background-color: #3F8A0A;
+	background-image: linear-gradient(to bottom, #6FBF37, #3F8A0A);
+	background-repeat: repeat-x;
+	transition: opacity 0.5s ease-out 0s;
+}
+
+.normal-btn:hover{
+	background-color: #3F8A0A;
+	transition:background-position 0.3s linear 0s;
+}
+
+.warning-btn{
+background-color: #3752AE;
+background-image: linear-gradient(to bottom, #5674DB, #3752AE);
+background-repeat: repeat-x;
+}
+
+.warning-btn:hover{
+	transition:background-position 0.3s linear 0s;
+}

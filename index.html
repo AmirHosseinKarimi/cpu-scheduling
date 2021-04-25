@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="lib/main.css" />
+		<link rel="stylesheet" type="text/css" href="lib/FCFS.css" />
+        <title>الگوریتم های زمان بندی پردازشگر به زبان PHP</title>
+		
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/js.js"></script>
+    </head>
+	
+    <body>
+	
+	
+		<div class="main">
+		
+			<div class="num">
+				<label for="numofpro">تعداد فرآیند ها:</label>
+				&nbsp;
+				<button class="btn normal-btn" onclick="decrease();">-</button>
+				<div id="input">2</div>
+				<button class="btn normal-btn" onclick="increase();">+</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<label for="tslbl">برش زمانی:</label>
+				&nbsp;
+				<button id="tsbtn" class="btn normal-btn" onclick="tsdecrease();">-</button>
+				<div id="ts" onblur="tschck();" contenteditable>2</div>
+				<button id="tsbtn" class="btn normal-btn" onclick="tsincrease();">+</button>
+
+			
+				
+				
+			</div>
+			
+			<form action="fcfs.php" method="GET" id="form">
+			
+				<input name="count" type="hidden" value="2" />
+				<input name="ts" type="hidden" value="2" />
+			
+				<div class="fields">
+					<div class="fields_div">
+						<label for="PN_1">نام فرآیند 1: </label><input name="PN_1" id="PN_1" type="text" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PB_1">زمان انفجار فرآیند 1: </label><input name="PB_1" id="PB_1" type="number" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PC_1">زمان ورود فرآیند 1: </label><input name="PC_1" id="PC_1" type="number" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PP_1">اولویت فرآیند 1: </label><input name="PP_1" id="PP_1" type="number" value="1" />
+					</div>
+							
+					<div class="fields_div">
+						<label for="PN_2">نام فرآیند 2: </label><input name="PN_2" id="PN_2" type="text" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PB_2">زمان انفجار فرآیند 2: </label><input name="PB_2" id="PB_2" type="number" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PC_2">زمان ورود فرآیند 2: </label><input name="PC_2" id="PC_2" type="number" value="" required="required" />&nbsp;&nbsp;&nbsp;
+						<label for="PP_2">اولویت فرآیند 2: </label><input name="PP_2" id="PP_2" type="number" value="1" />
+					</div>
+				
+				
+				</div>
+				
+				<div align="center" class="submit">
+					<input type="submit" class="btn warning-btn" value="محاسبه" />
+				</div>
+
+			</form>
+		
+			<div class="main_logo" align="center">
+				<img onclick="slct('FCFS');" id="FCFS" class="active" src="lib/FCFS.png" />
+				<img onclick="slct('SJF');" id="SJF" class="" src="lib/SJF.png" />
+				<img onclick="slct('PR');" id="PR" class="" src="lib/pr.png" />
+				<img style="cursor: not-allowed;" id="RR" class="" src="lib/RR.png" />
+			</div>
+		
+			<div class="help_txt">
+				<p id="FCFS_TXT" class="active">هر فرآیندی که زودتر پردازشگر را درخواست کرد، زودتر آنرا در اختیار میگیرد.</p>
+				<p id="SJF_TXT" class="">هر فرآیندی که طول انفجارش کوتاه تر باشد زودتر پردازشگر را در اختیار میگیرد.</p>
+				<p id="PR_TXT" class="">هر فرآیندی که اولویت بیشتری داشته باشد پردازشگر را در اختیار میگیرد.</p>
+				<p id="RR_TXT" class=""></p>
+			</div>
+		
+		</div>		
+		
+		<div class="logo" align="center">
+				<img src="lib/logo.png" />
+				<div class="header">الگوریتم های زمان بندی پردازشگر به زبان PHP</div>
+				<div class="footer">طراحی و برنامه نویسی توسط امیر حسین حسین زاده کریمی</div>
+		</div>
+		
+    </body>
+
+</html>
