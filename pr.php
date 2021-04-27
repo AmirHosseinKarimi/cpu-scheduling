@@ -280,7 +280,7 @@ echo '<div align="center" class="math">
 
 		</div>
 		<div class="main_logo" align="center">
-			<img src="lib/PR.png" />
+			<img src="lib/pr.png" />
 		</div>
     </body>
 <style>
